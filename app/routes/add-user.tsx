@@ -1,5 +1,4 @@
 import { json, type MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,7 +7,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://app:5000";
 
 export default function Index() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

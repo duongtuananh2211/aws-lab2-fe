@@ -8,7 +8,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-const API_URL = "http://localhost:5000";
+const API_URL = "http://app:5000";
 
 const fetchUsers = async () => {
   return fetch(`${API_URL}/users`).then((res) => res.json());

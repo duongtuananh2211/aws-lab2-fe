@@ -1,7 +1,7 @@
 version: "3.1"
 
 services:
-  app:
+  fe-app:
     image: lab3_fe_app
     container_name: lab3_fe_app
     build:
@@ -10,3 +10,10 @@ services:
     ports:
       - "3000:3000"
     working_dir: /app
+    networks:
+      - lab3_network
+
+networks:
+  lab3_network:
+    driver: bridge
+    external: true
